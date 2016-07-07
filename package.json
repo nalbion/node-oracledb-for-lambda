@@ -1,0 +1,30 @@
+{
+  "name": "oracledb-for-lambda",
+  "version": "1.9.3-3",
+  "description": "oracledb, precompiled for AWS Lambda",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "unzip lambda-lib.zip -d ../../lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nalbion/node-oracledb-for-lambda.git"
+  },
+  "keywords": [
+    "oracledb",
+    "Node.js",
+    "Oracle",
+    "Database",
+    "OCI",
+    "Lambda"
+  ],
+  "author": "Nicholas Albion <nalbion@yahoo.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nalbion/node-oracledb-for-lambda/issues"
+  },
+  "homepage": "https://github.com/nalbion/node-oracledb-for-lambda#readme",
+  "dependencies": {
+    "nan": "~2.3.0"
+  }
+}
