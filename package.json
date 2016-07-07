@@ -1,10 +1,10 @@
 {
   "name": "oracledb-for-lambda",
-  "version": "1.9.3-3",
+  "version": "1.9.3-4",
   "description": "oracledb, precompiled for AWS Lambda",
   "main": "index.js",
   "scripts": {
-    "postinstall": "unzip lambda-lib.zip -d ../../lib"
+    "postinstall": "unzip lambda-lib.zip -d ../../lib && mv ../../lib/libociei.so lib/libociei.so"
   },
   "repository": {
     "type": "git",

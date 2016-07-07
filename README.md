@@ -24,13 +24,11 @@ zip app.zip index.js package.js \
 Due to the size of the Oracle libraries, you will need to deploy your zip file to S3 and get Lambda to download from the S3 URL.
 
 ## Instant Client Light
-Unless you require error messages in languages other than English, you will probably want to use the [Instant Client Light (English) version](https://docs.oracle.com/database/121/LNOCI/oci01int.htm#LNOCI13309).
-
-**NOTE: This will significantly reduce the size of your zip and make deployment much easier**
+To keep the zip and application size small, the [Instant Client Light (English) version](https://docs.oracle.com/database/121/LNOCI/oci01int.htm#LNOCI13309) is provided by default.
+If you require error messages in languages other than English, you can swap the Instant Client Data library:
 
 ```bash
 # after npm install, and before creating your zip:
-rm lib/ociei.so
+cp node_modules/oracle-for-lambda/lib/libociei.so lib/
+rm lib/libociicus.so
 ```
-
-If you do require the standard version, you can delete `libociicus.so`
