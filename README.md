@@ -21,7 +21,8 @@ zip app.zip index.js package.js \
    lib/*.so* \
 ```
 
-Due to the size of the Oracle libraries, you will need to deploy your zip file to S3 and get Lambda to download from the S3 URL.
+Note: There is an [issue with `gulp-zip` modifying the structure of these binaries](https://github.com/thejoshwolfe/yazl/issues/25), so just use the native `zip`. 
+
 
 ## Instant Client Light
 To keep the zip and application size small, the [Instant Client Light (English) version](https://docs.oracle.com/database/121/LNOCI/oci01int.htm#LNOCI13309) is provided by default.
@@ -32,3 +33,5 @@ If you require error messages in languages other than English, you can swap the 
 cp node_modules/oracle-for-lambda/lib/libociei.so lib/
 rm lib/libociicus.so
 ```
+
+Due to the size of the Oracle libraries, you may need to deploy your zip file to S3 and get Lambda to download from the S3 URL.
