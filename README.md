@@ -12,7 +12,7 @@ Oracle Instant Client libraries provided in `lambda-lib` - they should be in you
 ```bash
 npm install --save oracledb-for-lambda
 
-zip app.zip index.js package.js \
+zip app.zip index.js package.json \
    your-other-dependencies... \
    node_modules/oracledb-for-lambda/package.json \
    node_modules/oracledb-for-lambda/index.js \
