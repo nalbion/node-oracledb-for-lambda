@@ -1,6 +1,6 @@
 {
   "name": "oracledb-for-lambda",
-  "version": "1.9.3-6",
+  "version": "1.9.3-7",
   "description": "oracledb, precompiled for AWS Lambda",
   "main": "index.js",
   "scripts": {
