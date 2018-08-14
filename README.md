@@ -1,6 +1,6 @@
 # node-oracledb-for-lambda
 
-This module is a fork of [node-oracledb](https://github.com/oracle/node-oracledb) v1.9.3, precompiled for AWS Lambda, Node.js 6.10.3.
+This module is a fork of [node-oracledb](https://github.com/oracle/node-oracledb) v1.9.3, precompiled for AWS Lambda, Node.js 8.x
 
 The scripts to reproduce the build process can be found at [node-oracledb-lambda-test](https://github.com/nalbion/node-oracledb-lambda-test). 
 
